@@ -30,4 +30,3 @@ We welcome contributions to enhance the scientific calculator project. Please fo
    Navigate to the original repository and open a Pull Request with a detailed description of your changes.
 
 Thank you for contributing!
-```
