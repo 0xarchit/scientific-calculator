@@ -11,9 +11,10 @@ This project is a full-featured scientific calculator built with Python and Tkin
 5. [Usage](#usage)
 6. [Screenshots](#screenshots)
 7. [Implementation Details](#implementation-details)
-8. [Future Work](#future-work)
-9. [Contributing](#contributing)
-10. [License](#license)
+8. [Workflow Diagram](#workflow-diagram)
+9. [Future Work](#future-work)
+10. [Contributing](#contributing)
+11. [License](#license)
 
 ## Introduction
 This calculator application was designed to provide a comprehensive yet user-friendly tool for performing mathematical calculations. It combines the simplicity of a basic calculator with the power of scientific functions, all wrapped in a modern and customizable interface.
@@ -84,6 +85,30 @@ The calculator is implemented using object-oriented programming with the followi
 - **History System**: Records and displays calculation history
 - **Theme Manager**: Handles switching between dark and light color schemes
 - **Keyboard Handler**: Processes keyboard events for direct input
+
+## Workflow Diagram
+
+Below is a diagram illustrating the workflow of the calculator application:
+
+```mermaid
+flowchart TD
+    A[User Input] -->|Button Click/Keyboard Press| B[Input Handler]
+    B --> C{Input Type?}
+    C -->|Number/Operator| D[Add to Expression]
+    C -->|Function| E[Add Function to Expression]
+    C -->|Equals| F[Evaluate Expression]
+    C -->|Clear/Delete| G[Modify Expression]
+    C -->|Theme Toggle| H[Switch Theme]
+    D --> I[Update Display]
+    E --> I
+    F --> J[Process Calculation]
+    J --> K[Format Result]
+    K --> L[Update History]
+    L --> I
+    G --> I
+    H --> M[Apply Theme Settings]
+    M --> I
+```
 
 ## Future Work
 - Add memory functions (M+, M-, MR, MC)
