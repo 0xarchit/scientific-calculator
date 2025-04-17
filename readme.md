@@ -130,4 +130,4 @@ Contributions to improve the calculator are welcome. Please follow these steps:
 6. Open a Pull Request
 
 ## License
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/0xarchit/scientific-calculator?tab=MIT-1-ov-file#) file for details.
